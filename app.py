@@ -6,6 +6,8 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from scipy.spatial.distance import cosine
 
+word_vectors = api.load("glove-wiki-gigaword-100")
+word_vectors.save("glove-wiki-gigaword-100.kv")
 
 app = Flask(__name__)
 
